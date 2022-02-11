@@ -1,0 +1,103 @@
+@import '../global.scss';
+
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: $dark;
+    color: $light;
+    position: fixed;     // yo dui line le position fix banauxa topbarko 
+    top: 0;
+    z-index: 3;             
+    // overflow: hidden;
+    transition:all 1.5s ease;
+.wrapper{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+.left{
+    display: flex;
+    align-items: center;
+
+    .logo{
+        text-decoration: none;
+        font-size:  40px;
+        font-weight: 700;
+        color: inherit;
+        margin-right: 40px;
+    }
+
+    .itemContainer{
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+        position: relative;
+
+        i{
+            font-size: 18px;
+            margin-right: 5px;
+            top: 0;
+          
+        }
+
+       
+    }
+}
+
+
+
+.right{
+    display: flex;
+    .hamburger{
+        width: 32px;
+        height: 25px;
+        flex-direction: column;
+    //  position: relative;
+        i{
+            width: 100%;
+            height: 3px;
+            color: $light;
+            font-size: 24px;
+            cursor: pointer;
+          
+            // position: absolute;
+          
+        }
+            i:hover{
+                font-size: 30px;
+                transition: all 0.5s ease;
+            }
+
+            .fa-xmark{
+                display: none;
+            }
+            .fa-bars{
+                display: block;
+            }
+        
+    }
+}
+}
+&.active{
+    background-color:$danger ;
+    .fa-xmark{
+        display: block;
+        position: relative;
+        top: 10;
+        
+    }
+    .fa-bars{
+        display: none;
+        position: relative;
+    }
+}
+}
+
+
+
+
+
+
+
+
