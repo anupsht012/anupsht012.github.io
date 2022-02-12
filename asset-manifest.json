@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/anupsht012.github.io/static/css/main.72fab61a.chunk.css",
+    "main.js": "/anupsht012.github.io/static/js/main.4f362493.chunk.js",
+    "main.js.map": "/anupsht012.github.io/static/js/main.4f362493.chunk.js.map",
+    "runtime-main.js": "/anupsht012.github.io/static/js/runtime-main.2d1f7571.js",
+    "runtime-main.js.map": "/anupsht012.github.io/static/js/runtime-main.2d1f7571.js.map",
+    "static/js/2.51d42d3e.chunk.js": "/anupsht012.github.io/static/js/2.51d42d3e.chunk.js",
+    "static/js/2.51d42d3e.chunk.js.map": "/anupsht012.github.io/static/js/2.51d42d3e.chunk.js.map",
+    "index.html": "/anupsht012.github.io/index.html",
+    "static/css/main.72fab61a.chunk.css.map": "/anupsht012.github.io/static/css/main.72fab61a.chunk.css.map",
+    "static/js/2.51d42d3e.chunk.js.LICENSE.txt": "/anupsht012.github.io/static/js/2.51d42d3e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2d1f7571.js",
+    "static/js/2.51d42d3e.chunk.js",
+    "static/css/main.72fab61a.chunk.css",
+    "static/js/main.4f362493.chunk.js"
+  ]
+}
