@@ -1,5 +1,65 @@
+@import '../global.scss';
+
 .portfolio{
-    background-color: lightcoral;
-    height: calc(100vh - 70px); 
-    width: 100%;
+    background-color: $light;
+    // height: calc(100vh - 70px); 
+    // width: 100%;
+    // background: radial-gradient(circle at top right, $light, $dark);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     h1{
+         font-size: 50px;
+     }
+    ul{
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+   
+    }
+    .container{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-wrap: wrap;
+        .item{
+            width: 220px;
+            height: 150px;
+            border-radius: 20px;
+            border: 1px solid rgb(156, 154, 154);
+            margin:10px 20px ;
+            align-items: center;
+            justify-content: center;
+            color: $hover;
+            position: relative;
+            overflow: hidden;
+            transition: all 1s ease;
+            cursor: pointer;
+            img{
+                width: 100%;
+                height: 100%;  
+                object-fit: cover;
+                z-index: 1;
+                // position: relative;
+            }
+            h3{
+                position: absolute;
+                font-size: 20px;
+                top: 45%;
+                right: 25%;
+            }
+            &:hover{
+                background-color: $secondary-color;
+                img{
+                    opacity: 0.3;
+                    z-index: 0;
+
+                }
+            }
+        }
+    }
+
 }

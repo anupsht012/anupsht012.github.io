@@ -3,6 +3,7 @@ import './menu.scss'
 
 export default function Menu({menuOpen, setMenuOpen}) {
     return (
+        <>
         <div className={'menu ' + (menuOpen && "active")}>
             <ul>
                 <li onClick={()=>setMenuOpen(false)}>
@@ -21,6 +22,12 @@ export default function Menu({menuOpen, setMenuOpen}) {
                     <a href="#testimonials">Testimonials</a>
                 </li>
             </ul>
+            <div className="info">
+            Designed by @anupsht012
         </div>
+        </div>
+        
+        </>
+        
     )
 }

@@ -2,7 +2,7 @@
 .menu{
     width:280px;
     height: 85vh;
-    background-color: $dark;
+    background-color: $primary-color;
     position: fixed;
     top: 75px;
     right: -280px;
@@ -35,7 +35,7 @@ align-items: center;
             font-size: inherit;
         }
         &:hover{
-        color:$dark;
+        color:$hover;
         font-weight: 600;
       
         width: auto;
@@ -43,11 +43,13 @@ align-items: center;
         
         }
         }
+      }
+      
        
-  }
+  
 
   &.active{
       right: 0;
-      background-color:$danger;
+      background-color:$secondary-color;
   }
 }

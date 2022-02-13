@@ -1,33 +1,46 @@
+@import './global.scss';
+
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 .app{
-   
+    display: flex;
+    flex-direction: column;
+    
     .sections{
         width: 100%;
-        height: calc(100vh - 70px);
+        flex: 1;
         background-color: rgb(157, 255, 0);
-        position: relative; 
-        top: 70px;
+        max-height: 90vh;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none; 
+        scroll-behavior: smooth;
         // top:10vh;  // xopeko lai topbar ko tala dekhauxa    
         // scroll-behavior: smooth;  
-        // scroll-snap-type:y mandatory;
-        // scrollbar-width: none;
+        scroll-snap-type:y mandatory;
+        scrollbar-width: none;
         // scroll-behavior: smooth;
         transition: .5s ease;
-        // &::-webkit-scrollbar{
-        //         display: none;
-        // }
-        // > *{                  //each element inside className-sections
+        &::-webkit-scrollbar{
+                display: none;
+        }
+        > *{                  //each element inside className-sections
            
-        //     height: calc(100vh - 70px); 
-        //     width: 100%;
-        //     // scroll-snap-align:start;
-        // }
+            height: calc(100vh - 70px); 
+            // width: 100%;
+            scroll-snap-align:start;
+        }
+        background: radial-gradient(circle at top left, $light, $dark); 
     }
 }
+
 
 
 

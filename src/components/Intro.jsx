@@ -1,21 +1,36 @@
 import './intro.scss'
 import { init } from 'ityped' 
-import { useEffect , useRef } from 'react'
+import { useLayoutEffect , useRef } from 'react'
+import person from '../assets/man.png';
+import dowmarrow from '../assets/down.png';
 
 export default function Intro() {
 
-const textRef=useRef();
+const textRef=useRef(null);
 
-useEffect(()=>{
-  init(textRef.current, { 
-    showCursor: false, 
-    strings: ['Developer !','Designer !', 'Dreamer !' ] })
-},[])  
+const intro = [
+  'Developer ',
+  'Designer ',
+  'Dreamer ',
+]
+
+useLayoutEffect(()=>{
+  
+  if(textRef){
+    init(textRef.current, { 
+      showCursor: true, 
+      backDelay:1500,
+      backSpeed:60,
+      strings: intro
+    })
+  }
+},[textRef])  
+
   return (
-    <div className={'intro'}>
+    <div className={'intro'} id='intro' >
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/man.png" alt="" />
+          <img src={person} alt="" />
         </div>
         
       </div>
@@ -26,7 +41,7 @@ useEffect(()=>{
             <h3>Freelance <span ref={textRef}></span></h3>
           </div>
           <a href="#portfolio">
-            <img src="assets/down.png" alt="" />
+            <img src={dowmarrow} alt="" />
           </a>
         </div>
     </div>

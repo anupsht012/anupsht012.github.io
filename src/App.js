@@ -14,14 +14,13 @@ const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu  menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className='sections'>
+      <Menu  menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>  
         <Intro menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Contact/>
         <Portfolio />
-      <Works/>
+       <Works/>
+       <Contact/>
       <Testimonials/>
-    
       </div>
 
     </div>
